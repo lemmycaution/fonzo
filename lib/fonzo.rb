@@ -32,6 +32,8 @@ module Fonzo
 
   module Constraints
 
+    include Koala
+    
     class Ensure
       def initialize(options)
         @options = options
