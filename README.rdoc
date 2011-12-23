@@ -1,0 +1,22 @@
+= Fonzo
+
+Router gem for Rails 3.0 Facebook Apps
+
+== Installation
+
+# Gemfile
+ gem 'fonzo', :git => 'git://github.com/lemmycaution/fonzo.git' 
+
+install bundle
+ $> bundle
+Then run the installer
+ $> rails generate fonzo:install
+
+== Usage
+
+*Configure it, route them*
+head to /config/initializers/fonzo.rb and uncomment desired constraint and configure it, restart server, viola!
+
+== Uses
+
+koala https://github.com/arsduo/koala
