@@ -32,4 +32,4 @@ koala https://github.com/arsduo/koala
 
 == Important
 
-not working with routing-filter gem, issued at
+not working with routing-filter gem, issued at https://github.com/svenfuchs/routing-filter/issues/15
