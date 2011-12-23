@@ -29,3 +29,7 @@ head to /config/initializers/fonzo.rb and uncomment desired constraint and confi
 == Uses
 
 koala https://github.com/arsduo/koala
+
+== Important
+
+not working with routing-filter gem, issued at

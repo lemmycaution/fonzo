@@ -1,3 +1,5 @@
+require 'koala'
+    
 module Fonzo
 
   mattr_accessor :filters  
@@ -17,8 +19,8 @@ module Fonzo
     # yield filters[Regexp.last_match(1).to_sym] if id.id2name =~ /ensure_(.+)/
   end
 
-  def self.apply
-    Rails.application.routes.draw do
+  def self.routes(map)
+    map.instance_exec do
 
       Fonzo.filters.each do |name,options|  
         options[:paths].each do |path|          
@@ -32,8 +34,6 @@ module Fonzo
 
   module Constraints
 
-    include Koala
-    
     class Ensure
       def initialize(options)
         @options = options

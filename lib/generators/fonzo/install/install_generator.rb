@@ -13,7 +13,7 @@ module Fonzo
       end
       
       def setup_routes
-        route "Fonzo.apply"
+        route "Fonzo.routes(self)"
       end
       
     end
