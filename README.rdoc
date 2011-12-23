@@ -12,9 +12,18 @@ install bundle
 Then run the installer
  $> rails generate fonzo:install
 
+set your facebook app key and secret as environment variables, with foreman gem put below in .env file 
+ FACEBOOK_APP_ID=your_facebook_app_id
+ FACEBOOK_SECRET=your_facebook_app_secret
+
+on heroku, run below lines on terminal
+ heroku config:add FACEBOOK_APP_ID=your_facebook_app_id
+ heroku config:add FACEBOOK_SECRET=your_facebook_app_secret
+
 == Usage
 
 *Configure it, route them*
+
 head to /config/initializers/fonzo.rb and uncomment desired constraint and configure it, restart server, viola!
 
 == Uses
